@@ -615,7 +615,6 @@ public:
         for (char hashcode : hashCode) {
             textString.push_back(hashcode);
         }
-        //cout << textString << "\n";
 
         //firstly, divide text into blocks of baseSzBlock, longest numerical order's length is baseSzBlock * 2
         deque<char> text;
