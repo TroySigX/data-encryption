@@ -606,7 +606,7 @@ public:
     // since the complexity of the above code is too large
     // optimization:
     // let t be a 2d array where t[i][j] = t[i - 1][j] + t[i][j - 1], and the ith row of t means
-    // (1) has been repeated i - 1 times (since the array starts at 0)
+    // (1) has been repeated i + 1 times (since the array starts at 0)
     // base case: t[0][i] = t[i][0] = 1
     // optimized t calculation: see calc()
     // b is calculated:
