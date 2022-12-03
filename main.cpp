@@ -1,4 +1,4 @@
-#pragma GCC optimization ("O2")
+#pragma GCC optimize ("O2")
 #include <string>
 #include <algorithm>
 #include <deque>
@@ -550,10 +550,10 @@ private:
 
     // returns the num-th row of the table t mention in encryption method
     // t calculation:
-    // t[i][j] is basically the number of ways to go from (0, 0) to (i, j) only going right or down
+    // t[i][j] is the number of ways to go from (0, 0) to (i, j) only going right or down
     // it is observed that the total number of steps is i + j, and total number of times of going right is j
     // so, t[i][j] is number of ways to pick j steps out of i + j steps
-    // t[i][j] = C(j, i + j) (or t[i][j] = C(i, i + j), both are same)
+    // t[i][j] = C(j, i + j) (or t[i][j] = C(i, i + j))
     // since there are only baseChar different characters
     // t[i][j] %= baseChar
     vector<int> calc(bignum num) {
